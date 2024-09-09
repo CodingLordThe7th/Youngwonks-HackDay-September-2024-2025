@@ -40,6 +40,11 @@ img {
 img:hover {
     transform: scale(1.02);
 }
+input {
+    font-family: sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+}
 .container {
     margin: 10vmax auto;
     top: 45%;
@@ -51,42 +56,58 @@ img:hover {
     text-align: center;
     animation: fadeIn 2s
 }
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #9c9c9c;
-  padding: 10px;
-  border-radius: 10px;
-  animation: fadeIn 2s;
-}
 .popup {
   position: relative;
   display: inline-block;
   cursor: pointer;
+  padding: 2px;
 }
 .popup .popuptext {
-  visibility: hidden;
-  width: auto;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  top: 105%;
-  left: 22%;
-  margin-left: -80px;
+    visibility: hidden;
+    width: auto;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    font-family: sans-serif;
+    border-radius: 6px;
+    padding: 8px;
+    position: absolute;
+    top: 105%;
+    left: 7%;
 }
-
+.pagebuttons {
+    text-align: center;
+    background-color: lightgrey;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+    margin: auto;
+}
+.pagebuttons .disabled{
+    transform: scale(0.9);
+    background-color: #A0C4D6;
+}
 .popup .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 1s
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
 }
-
+.choices-container {
+    background-color: lightblue;
+    text-align: center;
+    color: dimgrey;
+}
+.choices-container:hover{
+    transform: scale(1.1);
+    background-color: lightblue;
+    text-align: center;
+    color: dimgrey;
+}
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
   from {opacity: 0;}
