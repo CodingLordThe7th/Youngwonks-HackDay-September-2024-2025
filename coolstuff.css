@@ -72,8 +72,8 @@ input {
     border-radius: 6px;
     padding: 8px;
     position: absolute;
-    top: 105%;
-    left: 7%;
+    top: -5%;
+    left: 0%;
 }
 .pagebuttons {
     text-align: center;
@@ -81,6 +81,7 @@ input {
     padding: 10px;
     border-radius: 10px;
     width: 50%;
+    margin-top: 50px;
     margin: auto;
 }
 .pagebuttons .disabled{
