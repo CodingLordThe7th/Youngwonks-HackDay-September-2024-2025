@@ -16,30 +16,31 @@
 			<h2>Question 2:</h2>
 			<br>
 			<p>Which Moon is so big that it makes Pluto wobble?</p>
-        	<button id="incorrect">A: Nix</button>
-        	<button id="correct">B: Charon</button>
-        	<div id="displayMessage"></div>
-           		<script>
+			<button id="incorrect">A: Nix</button>
+			<button id="correct">B: Charon</button>
+			<div id="displayMessage"></div>
+			<script>
+			    var correctAnswer = document.getElementById("correct");
+			    var incorrectAnswer = document.getElementById("incorrect");
+			    var displayMessage = document.getElementById("displayMessage");
 
-    var correctAnswer = document.getElementById("correct");
-    var incorrectAnswer = document.getElementById("incorrect");
-    var displayMessage = document.getElementById("displayMessage");
-    correctAnswer.addEventListener("click", function () {
-      checkAnswer(correctAnswer);
-    });
-    incorrectAnswer.addEventListener("click", function () {
-      checkAnswer(incorrectAnswer);
-    });
-    function checkAnswer(answer) {
-      if (answer.id === "correct") {
-        displayMessage.innerHTML = "Your answer is correct!";
-      } 
-      else if (answer.id === "incorrect") {
-        displayMessage.innerHTML = "Your answer is incorrect!";
-      }
-    }
-    
-  		</script>
+			    correctAnswer.addEventListener("click", function () {
+			      checkAnswer(correctAnswer);
+			    });
+			    incorrectAnswer.addEventListener("click", function () {
+			      checkAnswer(incorrectAnswer);
+			    });
+
+			    function checkAnswer(answer) {
+			      if (answer.id === "correct") {
+			        displayMessage.innerHTML = '<p style="color: green; font-weight: bold;">Your answer is correct!</p>';
+			      } 
+			      else if (answer.id === "incorrect") {
+			        displayMessage.innerHTML = '<p style="color: red; font-weight: bold;">Your answer is incorrect!</p>';
+			      }
+			    }
+			</script>
+
     </div>
     
 
@@ -47,6 +48,5 @@
 			<button onclick="window.location.href = 'Question1.html';">Previous Question</button>
 			<button onclick="window.location.href = 'Page1.html';">Return to Resources</button>
 			<button onclick="window.location.href = 'Question3.html';">Next Question</button>
-		</div>
 	</body>
 </html>
